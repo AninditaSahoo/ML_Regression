@@ -3,10 +3,11 @@ Here we are solving the Regression Problem.
 
 # Software and Account Requirements:
 
-1.	[Github Account] (https://github.com/login)
-2.	[Heroku Account] (https://id.heroku.com/login or https://signup.heroku.com/)
-3.	[VS Code IDE] (https://code.visualstudio.com/download)
-4.	[Git Cli] (https://git-scm.com/downloads)
+1. [Github Account] (https://github.com/login)
+2. [Heroku Account] (https://id.heroku.com/login or https://signup.heroku.com/)
+3. [VSCode IDE] (https://code.visualstudio.com/download)
+4. [Git Cli] (https://git-scm.com/downloads)
+5. [Documentation](https://git-scm.com/docs/gittutorial)
 
 ### Create the conda envrironment 
 ```
@@ -44,4 +45,32 @@ git push origin main
 ### To know the origin i.e. the URL (used during git clone url):
 ```
 git remote -v
+```
+### To build the CI/CD pipeline we need 3 information from Heroku i.e.
+```
+1. HEROKU_EMAI = anindita.sahoo2009@gmail.com
+2. HEROKU_APIKEY = eef14755-ed99-4b2c-ab1a-9f51fadb266f
+3. HEROKU_APPNAME = ml-regression-12thjune
+```
+### Create the docker image
+```
+docker build -t <image_name>:<tagname> .
+```
+> Note: Image name for docker must be lowercase.
+> During this process better open the docker desktop in yur system.
+### To see the list of docker image in the system(command):
+```
+docker images
+```
+### To run the docker image
+```
+docker run -p 5000:5000 -e PORT=5000 IMAGE ID 688cbf378305
+```
+### To check the running container
+```
+docker ps
+```
+### To stop the docker container
+```
+docker stop <CONTAINER ID>
 ```
