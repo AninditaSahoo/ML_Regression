@@ -78,3 +78,7 @@ docker stop <CONTAINER ID>
 ```
 pip install ipykernel
 ```
+### to read the content in the yaml file
+```
+pip install PyYAML
+```
