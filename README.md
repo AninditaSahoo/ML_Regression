@@ -74,3 +74,7 @@ docker ps
 ```
 docker stop <CONTAINER ID>
 ```
+### To execute the jupyter notebook in the VS code
+```
+pip install ipykernel
+```
